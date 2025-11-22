@@ -1,4 +1,4 @@
-import { User, CreatorProfile, ClientProfile, Contract, Message, Chat, Clip, Tutorial, Skill } from '../types';
+import { CreatorProfile, ClientProfile, Contract, Message, Chat, Clip, Tutorial } from '../types';
 
 // Mock Users
 export const mockUsers: (CreatorProfile | ClientProfile)[] = [
