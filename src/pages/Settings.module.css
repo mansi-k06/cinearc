@@ -1,0 +1,156 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-foreground);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.backButton:hover {
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.settingsList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.settingsSection {
+  margin-bottom: 2rem;
+  background-color: var(--color-foreground);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.settingItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.settingItem:last-child {
+  border-bottom: none;
+}
+
+.settingInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.settingIcon {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-background);
+  border-radius: 8px;
+}
+
+.settingName {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.settingDescription {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.toggleButton {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  background-color: var(--color-border);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 2px;
+}
+
+.toggleButton:hover {
+  background-color: var(--color-text-secondary);
+}
+
+.toggleSlider {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  transform: translateX(0);
+}
+
+.toggleSliderActive {
+  transform: translateX(20px);
+}
+
+.toggleButtonActive {
+  background-color: var(--color-primary);
+}
+
+.logoutButton {
+  padding: 8px 16px;
+  background-color: var(--color-error);
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.logoutButton:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .settingItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
