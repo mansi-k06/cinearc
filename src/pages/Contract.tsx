@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoArrowBack, IoAdd, IoDocumentText, IoTime, IoCheckmarkCircle } from 'react-icons/io5';
+import { Contract as ContractType } from '../types';
 import { ThemedView } from '../components/ThemedView';
 import { ThemedText } from '../components/ThemedText';
-import { getContractsByUserId, getUserById, currentUserId, mockContracts } from '../data/mockData';
+import { getContractsByUserId, getUserById, currentUserId } from '../data/mockData';
 import styles from './Contract.module.css';
 
 const Contract: React.FC = () => {
@@ -16,7 +17,7 @@ const Contract: React.FC = () => {
     budget: contract.budget,
   }));
 
-  const getStatusIcon = (status: Contract['status']) => {
+  const getStatusIcon = (status: ContractType['status']) => {
     switch (status) {
       case 'active':
         return <IoCheckmarkCircle className={styles.statusIconActive} />;
