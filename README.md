@@ -2,6 +2,8 @@
 
 A networking platform for filmmakers, editors, cinematographers, and clients. Built with React, TypeScript, and Vite.
 
+## 🎥 Demo Video
+[Watch Demo Video](https://drive.google.com/file/d/1WSnw4pL8rEe_OpcNN7NSo_ppuCRgA0gV/view?usp=drivesdk)
 ## Features
 
 - **Authentication**: Separate login/signup flows for creators and clients
